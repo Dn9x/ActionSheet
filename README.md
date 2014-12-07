@@ -1,20 +1,29 @@
 ActionSheet For Android
 ===========
-这里先说明下，我是在做一个项目的时候需要ActionSheet，就在github上面找到了一个安卓方面的ActionSheet,[地址](https://github.com/baoyongzhang/ActionSheetForAndroid/tree/master/code),这里我感谢这位作者虽然我没有联系他，
-我的这个ActionSheet是在他的这个基础上面修改的，他的效果是只是放了文字，我添加了图标和效果，而且我移除了原作者的style.xml文件和自定义的attr.xml这两个文件，我觉得一个控件就尽量的做到让使用者进少量的配置文件，如果可以最好是漏出相应的方法来进行设置，这也可能是我用其他语言的习惯吧，
+这里先说明下，我是在做一个项目的时候需要ActionSheet，就在github上面找到了一个安卓方面的ActionSheet,[地址](https://github.com/baoyongzhang/ActionSheetForAndroid/tree/master/code),这里我感谢这位作者虽然我没有联系他，  
+我的这个ActionSheet是在他的这个基础上面修改的，他的效果是只是放了文字，我添加了图标和效果，而且我移除了原作者的style.xml文件和自定义的attr.xml这两个文件，我觉得一个控件就尽量的做到让使用者进少量的配置文件，如果可以最好是漏出相应的方法来进行设置，这也可能是我用其他语言的习惯吧，  
 这里在说明一点，我刚做安卓大概也就这2个礼拜，所以很多知识都是边学边做的，所以代码方面可能不是很完善，如果你看到了，可以告诉我我进行修改大家共同进步。
+
+# 效果图
+<p>
+   <img src="https://raw.githubusercontent.com/baoyongzhang/ActionSheetForAndroid/master/screenshot-1.png" width="320" alt="Screenshot"/>
+   &nbsp;&nbsp;
+   <img src="https://raw.githubusercontent.com/baoyongzhang/ActionSheetForAndroid/master/screenshot-2.png" width="320" alt="Screenshot"/>
+</p>
 
 # 使用方法
 
 ### 在某个按钮点下的时候创建一个ActionSheet并显示
 
+#### xml方面
 在使用之前请先复制`drawable`文件夹下的五个文件到你的项目里面，这五个是必须的
-`actionsheet_bottom_border.xml`
-`actionsheet_cancel_border.xml`
-`actionsheet_middle_border.xml`
-`actionsheet_single_border.xml`
-`actionsheet_top_border.xml`
+`actionsheet_bottom_border.xml`  
+`actionsheet_cancel_border.xml`  
+`actionsheet_middle_border.xml`  
+`actionsheet_single_border.xml`  
+`actionsheet_top_border.xml`  
 
+#### 代码方面
 ```java
 
 //建立取消选项
@@ -51,14 +60,14 @@ Item item2 = new Item(R.color.white, R.color.bgred,
 	R.drawable.setting_normal, R.drawable.setting_pressed,
 	R.color.bgred, R.color.white, "Setting", 0.7f);
 ```
-第一个参数表示：背景默认的颜色
-第二个参数表示：按下的时候背景的颜色
-第三个参数表示：默认Icon的图标
-第四个参数表示：按下时Icon的图标
-第五个参数表示：默认文字的颜色
-第六个参数表示：按下时文字的颜色
-第七个参数表示：显示的文字
-第八个参数表示：Item的背景透明度
+* 第一个参数表示：背景默认的颜色  
+* 第二个参数表示：按下的时候背景的颜色  
+* 第三个参数表示：默认Icon的图标  
+* 第四个参数表示：按下时Icon的图标  
+* 第五个参数表示：默认文字的颜色  
+* 第六个参数表示：按下时文字的颜色  
+* 第七个参数表示：显示的文字  
+* 第八个参数表示：Item的背景透明度  
 
 ### 方法说明
 
@@ -76,7 +85,8 @@ Item item2 = new Item(R.color.white, R.color.bgred,
 
 实现`ActionSheetListener`接口
 * `onOtherButtonClick()` 点击某个条目，`index`是条目的下标
-* `onDismiss()` 关闭事件，`isCancel` 参数表示是否是点击取消按钮、返回键、或者点击空白处(`setCancelableOnTouchOutside(true)`)
+* `onDismiss()` 关闭事件， 
+* `isCancel` 参数表示是否是点击取消按钮、返回键、或者点击空白处(`setCancelableOnTouchOutside(true)`)
 
 ```java
    	@Override
