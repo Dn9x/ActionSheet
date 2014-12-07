@@ -31,11 +31,10 @@ public class MainActivity extends Activity implements ActionSheetListener {
 				R.color.bgred, R.color.white, "Chrome");
 		Item item3 = new Item(R.color.white, R.color.bgred,
 				R.drawable.play_normal, R.drawable.play_pressed, R.color.bgred,
-				R.color.white, "Play");
+				R.color.white, "Play", 0.5f);
 
 		ActionSheet.createBuilder(this, this.getFragmentManager())
-				.setmTextSize(20).setmCancelButtonMarginTop(20)
-				.setmOtherItemSpacing(5).setCancelItem(cancelItem)
+				.setCancelItem(cancelItem)
 				.setmOtherItems(item1, item2, item3)
 				.setCancelableOnTouchOutside(true).setListener(this).show();
 	}

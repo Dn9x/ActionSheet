@@ -381,10 +381,10 @@ public class ActionSheet extends Fragment implements OnClickListener,
 		private String mTag = "actionSheet";
 		private boolean mCancelableOnTouchOutside;
 		private ActionSheetListener mListener;
-		private int mTextSize=20;
+		private int mTextSize=30;
 		private int mIconMarginLeft=3;
-		private int mCancelButtonMarginTop;
-		private int mOtherItemSpacing;
+		private int mCancelButtonMarginTop=20;
+		private int mOtherItemSpacing=5;
 
 		public Builder(Context context, FragmentManager fragmentManager) {
 			mContext = context;
