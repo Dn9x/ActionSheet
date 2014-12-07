@@ -6,9 +6,9 @@ ActionSheet For Android
 
 # 效果图
 <p>
-   <img src="https://raw.githubusercontent.com/baoyongzhang/ActionSheetForAndroid/master/screenshot-1.png" width="320" alt="Screenshot"/>
+   <img src="https://raw.githubusercontent.com/Dn9x/ActionSheet/master/Screenshot1.jpeg" width="320" alt="Screenshot"/>
    &nbsp;&nbsp;
-   <img src="https://raw.githubusercontent.com/baoyongzhang/ActionSheetForAndroid/master/screenshot-2.png" width="320" alt="Screenshot"/>
+   <img src="https://raw.githubusercontent.com/Dn9x/ActionSheet/master/Screenshot2.jpeg" width="320" alt="Screenshot"/>
 </p>
 
 # 使用方法
